@@ -34,3 +34,6 @@
    - 127.0.0.1
    - ::1
    - localhost
+
+- name: Create .my.cnf for ansible user
+  template: src=.my.cnf.j2 desc=~/.my.cnf

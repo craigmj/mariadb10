@@ -1,12 +1,13 @@
 ---
 # tasks file for craigmj.mariadb.10
-- name: Install curl, python-pycurl, software-properties-common
+- name: Install curl, python-mysqldb, python-pycurl, software-properties-common
   sudo: yes
   apt: pkg={{ item }} state=present
   with_items:
     - curl
     - software-properties-common
     - python-pycurl
+    - python-mysqldb
 
 - name: Add MariaDB apt key
   sudo: yes

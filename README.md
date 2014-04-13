@@ -11,6 +11,9 @@ None
 Role Variables
 --------------
 
+- mysql_root_db_pass
+- mariadb_repo_url
+
 None
 
 Dependencies

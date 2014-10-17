@@ -36,4 +36,4 @@
    - localhost
 
 - name: Create .my.cnf for ansible user
-  template: src=.my.cnf.j2 desc=~/.my.cnf
+  template: src=.my.cnf.j2 dest=~/.my.cnf
